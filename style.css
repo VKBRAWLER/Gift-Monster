@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --theme: orange;
+}
+header {
+    height: 80px;
+    /* border-bottom: 3px solid var(--theme); */
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    /* position: relative; */
+}
+header .logo{
+    height: 10vw;
+    min-height: 40px;
+    max-height: 80px;
+    margin-right: auto;
+    /* border: 1px solid var(--theme); */
+    display: flex;
+}
+header h2{
+    color: var(--theme);
+    padding-left: 10px;
+    font-size:xx-large;
+}
+header #search {
+    position: relative;
+    height: 50px;
+}
+@media screen and (max-width: 900px){
+    /* brings the search bar down for tablets and phone as it shrinks */
+    header #search {
+        position: absolute;
+        top: 100px;
+        right: 10px;
+    }
+}
+header button {
+    background-color: transparent;
+    border: none;
+    height: 40px;
+}
+header #search button {
+    position: absolute;
+    height: 30px;
+    top: 10px;
+}
+header button img {
+    /* button images to follow thier containing btn */
+    height: inherit;
+}
+header input {
+    /* search bar */
+    height: 50px;
+    width: auto;
+    border-radius: 20px;
+    padding-left: 50px;
+    font-size: 25px;
+}
+header button:nth-child(1){
+    /*search button  */
+    left: 10px;
+}
+header button:nth-child(2){
+    /* input conent delete button */
+    right: 10px;
+}
+header button:nth-child(n + 3){
+    /* stying for cart and profile logo */
+    height: 40px;
+    margin-left: 20px;
+}
