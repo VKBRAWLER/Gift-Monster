@@ -129,6 +129,7 @@ nav {
     /* Overflowed content from start to show all elements */
     nav {
         justify-content: start;
+        gap: 0px;
     }
 }
 nav a {
@@ -149,3 +150,25 @@ nav h4 {
     width: 100%;
     font-weight: 100;
 }
+/* width */
+::-webkit-scrollbar {
+    height: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    border: 1px solid white;
+    background: var(--theme);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: orangered;
+  }
+  
