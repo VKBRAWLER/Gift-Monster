@@ -10,7 +10,7 @@
 :root{
     --theme: rgb(255, 145, 77);
 }
-/* header styling content */
+/* header styling code */
 header {
     height: 80px;
     /* border-bottom: 3px solid var(--theme); */
@@ -82,15 +82,13 @@ header button img {
 }
 header input {
     /* search bar */
-    width: 100%;
+    width: 80%;
     height: 50px;
     border: none;
+    border-color: transparent;
     padding-left: 50px;
     font-size: 25px;
-}
-header input:active {
-    /* remove unnessasry border when active  */
-    border: none;
+    outline: none;
 }
 header button:nth-child(1){
     /*search button  */
@@ -112,7 +110,7 @@ header button:nth-child(n + 3){
         margin-left: 5px;
     }
 }
-/* Nav or Navigation Bar styling content */
+/* Nav or Navigation Bar styling code */
 nav {
     height: 90px;
     background-color: var(--theme);
@@ -171,4 +169,15 @@ nav h4 {
   ::-webkit-scrollbar-thumb:hover {
     background: orangered;
   }
-  
+
+/* offer section styling code */
+#offers {
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+#offers div {
+    border: 5px solid black;
+    margin: auto;
+    padding: 20px;
+}
