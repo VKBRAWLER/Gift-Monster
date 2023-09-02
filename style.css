@@ -8,26 +8,35 @@
     src: url(./font/ADLaM_Display/ADLaMDisplay-Regular.ttf);
 }
 :root{
-    --theme: rgb(255, 145, 77);
+    --PriTheme: #FFA500;
+    --SecTheme: #ffa238;
+    --Acent: #f9cd86;
+    --BgTheme: white;
+    --PriText: #333333;
+    --SecText: #666666;
+    --Border: #D3D3D3;
+    --Link: #0066CC;
+    --Demo: rgb(0 168 99);
     /* rgb(0 168 99) */
 }
 /* header styling code */
 header {
     height: 80px;
-    /* border-bottom: 3px solid var(--theme); */
+    /* border-bottom: 3px solid var(--PriTheme); */
     padding: 10px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
-    /* position: relative; */
+    /* position: relative;
+     */
 }
 header .logo{
     height: 10vw;
     min-height: 50px;
     max-height: 80px;
     margin-right: auto;
-    /* border: 1px solid var(--theme); */
+    /* border: 1px solid var(--PriTheme); */
     display: flex;
 }
 header h2 {
@@ -35,11 +44,11 @@ header h2 {
     font-size:xx-large;
 }
 header h2:nth-child(1) {
-    color: white;
-    -webkit-text-stroke: 1px var(--theme);
+    color: var(--BgTheme);
+    -webkit-text-stroke: 1px var(--PriTheme);
 }
 header h2:nth-child(2) {
-    color: var(--theme);
+    color: var(--PriTheme);
 }
 @media screen and (max-width: 768px) {
     header h2 {
@@ -49,7 +58,7 @@ header h2:nth-child(2) {
 header #search {
     position: relative;
     border-radius: 20px;
-    border: 3px solid black;
+    border: 3px solid var(--SecText);
     height: 50px;
     width: auto;
     overflow: hidden;
@@ -86,7 +95,6 @@ header input {
     width: 80%;
     height: 50px;
     border: none;
-    border-color: transparent;
     padding-left: 50px;
     font-size: 25px;
     outline: none;
@@ -98,7 +106,7 @@ header button:nth-child(1){
 header button:nth-child(2){
     /* input conent delete button */
     right: 10px;
-    background-color: white;
+    background-color: var(--BgTheme);
 }
 header button:nth-child(n + 3){
     /* stying for wishlist, cart and profile logo */
@@ -114,7 +122,7 @@ header button:nth-child(n + 3){
 /* Nav or Navigation Bar styling code */
 nav {
     height: 90px;
-    background-color: var(--theme);
+    background-color: var(--Acent);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -135,7 +143,7 @@ nav a {
     flex-wrap: wrap;
     min-width: max-content;
     text-decoration: none;
-    color: white;
+    color: var(--PriText);
 }
 nav img {
     height: 40px;
@@ -144,47 +152,49 @@ nav img {
 }
 nav h4 {
     width: 100%;
-    font-weight: 100;
+    font-weight: 200;
 }
 /* width */
 ::-webkit-scrollbar {
-    height: 15px;
+    height: 10px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: white;
+    background: var(--BgTheme);
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
     border-radius: 20px;
-    border: 1px solid white;
-    background: var(--theme);
+    border: 1px solid var(--BgTheme);
+    background: var(--SecTheme);
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: orangered;
+    background: var(--Acent);
   }
 
 /* offer section styling code */
 #offers {
     padding: 20px;
-    width: 100%;
+    width: calc(100% - 40px);
+
     text-align: center;
     font-size: x-large;
     display: flex;
     justify-content: space-evenly;
-    overflow: scroll;
+    overflow-x: scroll;
 }
 #offers div {
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-    box-shadow: 20px 20px;
+    box-shadow: 5px 5px 10px 0px rgba(255, 111, 0, 0.5);
     display: grid;
     grid-template-rows: 30px 120px 120px;
     grid-template-columns: 120px 120px;
+}
+#offers div:hover {
+    box-shadow: 5px 5px 5px 5px rgba(255, 111, 0, 0.8);
 }
 #offers p {
     grid-column: 1/ span 2;
@@ -193,11 +203,18 @@ nav h4 {
     height: 100px;
     margin: 10px;
 }
+@media screen and (max-width: 1270px) {
+    /* offer section for mobile and tablets */
+    #offers {
+        gap: 20px;
+        justify-content: start; 
+    }
+}
 /* profile page styling code */
 main #pp-bg{
     width: 100%;
     height: 400px;
-    background:var(--theme);
+    background:var(--PriTheme);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
