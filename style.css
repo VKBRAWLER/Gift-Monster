@@ -121,20 +121,14 @@ header button:nth-child(n + 3){
 }
 /* Nav or Navigation Bar styling code */
 nav {
-    height: 90px;
+    height: 100px;
     background-color: var(--Acent);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
     overflow-x: scroll;
-}
-@media screen and (max-width: 1000px) {
-    /* Overflowed content from start to show all elements */
-    nav {
-        justify-content: start;
-        gap: 0px;
-    }
+    overflow-y: hidden;
 }
 nav a {
     /* to make images in the center along with the text */
@@ -144,6 +138,24 @@ nav a {
     min-width: max-content;
     text-decoration: none;
     color: var(--PriText);
+    border-radius: 30px;
+    padding: 20px;
+}
+nav a:hover {
+    background-color: var(--PriTheme);
+}
+@media screen and (max-width: 1000px) {
+    /* Overflowed content from start to show all elements */
+    nav {
+        justify-content: start;
+        gap: 0px;
+    }
+    nav a {
+        padding: 0px;
+    }
+    nav a:hover {
+        background-color: transparent;
+    }
 }
 nav img {
     height: 40px;
@@ -175,7 +187,25 @@ nav h4 {
   ::-webkit-scrollbar-thumb:hover {
     background: var(--Acent);
   }
+/* video section styling code */
+#video {
+    width: cacl(100% - 20px);
+    margin: 10px;
+}
+/* slideshow section styling code */
 
+#slideShow {
+    width: 100%;
+}
+#slideShow .slide {
+    display: flex;
+    overflow: hidden;
+    width: calc(90%);
+    margin: 5%;
+}
+#slideShow img {
+    width: 100%;
+}
 /* offer section styling code */
 #offers {
     padding: 20px;
