@@ -188,26 +188,26 @@ nav h4 {
     background: var(--Acent);
   }
 /* video section styling code */
-#video {
+main #video {
     width: cacl(100% - 20px);
     margin: 10px;
 }
 /* slideshow section styling code */
 
-#slideShow {
+main #slideShow {
     width: 100%;
 }
-#slideShow .slide {
+main #slideShow .slide {
     display: flex;
     overflow: hidden;
     width: calc(90%);
     margin: 5%;
 }
-#slideShow img {
+main #slideShow img {
     width: 100%;
 }
 /* offer section styling code */
-#offers {
+main #offers {
     padding: 20px;
     width: calc(100% - 40px);
 
@@ -217,25 +217,25 @@ nav h4 {
     justify-content: space-evenly;
     overflow-x: scroll;
 }
-#offers div {
+main #offers div {
     box-shadow: 5px 5px 10px 0px rgba(255, 111, 0, 0.5);
     display: grid;
     grid-template-rows: 30px 120px 120px;
     grid-template-columns: 120px 120px;
 }
-#offers div:hover {
+main #offers div:hover {
     box-shadow: 5px 5px 5px 5px rgba(255, 111, 0, 0.8);
 }
-#offers p {
+main #offers p {
     grid-column: 1/ span 2;
 }
-#offers img {
+main #offers img {
     height: 100px;
     margin: 10px;
 }
 @media screen and (max-width: 1270px) {
     /* offer section for mobile and tablets */
-    #offers {
+    main #offers {
         gap: 20px;
         justify-content: start; 
     }
