@@ -241,18 +241,22 @@ main #offers img {
     }
 }
 /* profile page styling code */
-main #pp-bg{
-    width: 100%;
-    height: 400px;
-    background:var(--PriTheme);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
+main #profile {
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: x-large;
+    color: var(--PriText);
 }
-#pp-bg > img, #pp-bg > div {
-    border: 3px solid black;
+main #profile img {
+    height: 20vw;
+    min-height: 250px;
+    max-height: 400px;
 }
-#pp-bg img {
-    height: 200px;
+main #profile .info {
+    margin: auto 0;
+}
+main #profile p {
+    margin: 2rem 0;
 }
