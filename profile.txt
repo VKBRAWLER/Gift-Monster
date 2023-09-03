@@ -8,3 +8,6 @@ Language
 Signout
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 Legal
+1. registration info required
+2. profile display
+3. item display and details
