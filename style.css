@@ -11,9 +11,9 @@
     --PriTheme: #FFA500;
     --SecTheme: #ffa238;
     --Acent: #f9cd86;
-    --BgTheme: white;
-    --PriText: #333333;
-    --SecText: #666666;
+    --BgTheme: white;   
+    --PriText: #000000;
+    --SecText: #7a5413;
     --Border: #D3D3D3;
     --Link: #0066CC;
     --Demo: rgb(0 168 99);
@@ -304,6 +304,7 @@ main #signin form {
     justify-content: center;
     align-items: center;
     display: flex;
+    position: relative;
     flex-wrap: wrap;
 }
 main #signin section {
@@ -318,6 +319,13 @@ main #signin input {
     border-radius: 20px;
     padding: 5px;
     font-size: larger;
+}
+main #signin form a {
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    text-decoration: none;
+        color: var(--SecText);
 }
 main #signin button {
     height: 50px;
