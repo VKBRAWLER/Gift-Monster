@@ -8,13 +8,13 @@
     src: url(./font/ADLaM_Display/ADLaMDisplay-Regular.ttf);
 }
 :root{
-    --PriTheme: #FFA500;
-    --SecTheme: #ffa238;
-    --TriTheme: #f9cd86;
-    --BgTheme: white;   
-    --PriText: #000000;
-    --SecText: #7a5413;
-    --Border: #D3D3D3;
+    --PriTheme: #fcbf49;
+    --SecTheme: #f77f00;
+    --TriTheme: #eae2b7;
+    --BgTheme: white;
+    --PriText: #003049;
+    --SecText: #d62828;
+    --Border: #003049;
     --Link: #0066CC;
     --Demo: rgb(0 168 99);
     /* rgb(0 168 99) */
@@ -58,7 +58,7 @@ header h2:nth-child(2) {
 header #search {
     position: relative;
     border-radius: 20px;
-    border: 3px solid var(--SecText);
+    border: 3px solid var(--Border);
     height: 50px;
     width: auto;
     overflow: hidden;
@@ -281,10 +281,29 @@ main #orders {
     border-radius: 30px;
     background-color: var(--TriTheme);
 }
-main h2 {   
-    text-decoration: underline;
-    
+main #orders h2 {   
+    text-decoration: underline; 
+    margin-bottom: 10px;
 }
+main #orders ul {
+    list-style-type: none;
+}
+main #orders li {
+    width: calc(100% - 40px);
+    height: 130px;
+    display: flex;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: var(--SecTheme);
+    border-radius: 30px;
+}
+main #orders img {
+    height: inherit;
+}
+
+
+
+
 /* sign in page styling code */
 main #signin {
     background-color: var(--PriTheme);
