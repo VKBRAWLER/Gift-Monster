@@ -287,6 +287,8 @@ main #orders h2 {
 }
 main #orders ul {
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 main #orders li {
     width: calc(100% - 40px);
@@ -297,13 +299,46 @@ main #orders li {
     background-color: var(--SecTheme);
     border-radius: 30px;
 }
+@media screen and (min-width: 1200px) {
+    main #orders li {
+        width: calc(50% - 80px);
+        margin: 20px 20px;
+    }
+}
 main #orders img {
     height: inherit;
 }
-
-
-
-
+main #orders .info {
+    width: 60%;
+}
+main #orders h3 {   
+    text-decoration: underline;
+    margin-bottom: 10px;
+    display: inline;
+}
+main #orders span {
+    margin-left: 10px;
+}
+main #orders button {
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+}
+main #orders button:hover {
+    font-size: large;
+}
+main #orders a {
+    font-size: large;
+    width: 100%;
+    text-align: center;
+}
+main #orders a:hover {
+    text-decoration: underline;
+}
 /* sign in page styling code */
 main #signin {
     background-color: var(--PriTheme);
