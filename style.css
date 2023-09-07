@@ -8,16 +8,19 @@
     src: url(./font/ADLaM_Display/ADLaMDisplay-Regular.ttf);
 }
 :root{
-    --PriTheme: #fcbf49;
-    --SecTheme: #f77f00;
-    --TriTheme: #eae2b7;
-    --BgTheme: white;
+    --PriTheme: #00b4d8;
+    --SecTheme: #0077b6;
+    --TriTheme: #90e0ef;
+    --BgTheme: #caf0f8;
     --PriText: #003049;
     --SecText: #d62828;
     --Border: #003049;
     --Link: #0066CC;
     --Demo: rgb(0 168 99);
     /* rgb(0 168 99) */
+}
+body {
+    background-color: var(--BgTheme);
 }
 /* header styling code */
 header {
@@ -28,6 +31,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
+    background-color: var(--BgTheme);
     /* position: relative;
      */
 }
@@ -98,6 +102,7 @@ header input {
     padding-left: 50px;
     font-size: 25px;
     outline: none;
+    background-color: var(--BgTheme);
 }
 header button:nth-child(1){
     /*search button  */
@@ -109,7 +114,7 @@ header button:nth-child(2){
     background-color: var(--BgTheme);
 }
 header button:nth-child(n + 3){
-    /* stying for wishlist, cart and profile logo */
+    /* styling for wishlist, cart and profile logo */
     height: 40px;
     margin-left: 20px;
 }
@@ -190,14 +195,17 @@ nav h4 {
   }
 /* default main content styling code */
 main {
+    --Screen: calc(100vh - 100px);
     width: 100%;
+    position: relative;
+    background-color: var(--BgTheme);
     /* 80 normal, below 900px 60 more */
-    height: calc(100vh - 100px);
+    height: var(--Screen);
     min-height: 550px;
 }
 @media screen and (max-width: 900px) {
     main {
-        height: calc(100vh - 160px);
+        --Screen: calc(100vh - 160px);
     }
 }
 /* video section styling code */
@@ -223,7 +231,6 @@ main #slideShow img {
 main #offers {
     padding: 20px;
     width: calc(100% - 40px);
-
     text-align: center;
     font-size: x-large;
     display: flex;
@@ -235,6 +242,7 @@ main #offers div {
     display: grid;
     grid-template-rows: 30px 120px 120px;
     grid-template-columns: 120px 120px;
+    background-color: var(--TriTheme);
 }
 main #offers div:hover {
     box-shadow: 5px 5px 5px 5px rgba(255, 111, 0, 0.8);
@@ -343,7 +351,9 @@ main #orders a:hover {
 main #signin {
     background-color: var(--PriTheme);
     padding: 30px;
-    margin-left: calc(50% - 180px - 30px);
+    position: absolute;
+    left: calc(50% - 180px - 30px);
+    top: calc(var(--Screen)/2 - 200px - 30px);
     width: 360px;
     height: 400px;
     border-radius: 30px;
