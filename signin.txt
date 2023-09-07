@@ -1,0 +1,28 @@
+1st step will be to :- Create seller account 
+NAme email and password
+
+
+Step 2 :- VERIFY PHONE NUMBER
+
+Step 3 :- Business detail
+
+Sellers Info required:-
+
+(CHECK BOX) I have a gst no
+
+ENter your tax detail….
+Provisional GSTIN…
+PAN number…
+
+
+(CHECK BOX) I will update later
+
+
+Step 4 : Tell us about your business
+
+Store name
+Select product category*****((To add this option later))
+PIn code
+Address 
+City
+State
