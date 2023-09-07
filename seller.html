@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Gift Monster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- LOGO here -->
+            <img id="logo" src="./img/logo.png" alt="logo">
+            <div id="title">
+            <!-- Title name here -->
+                <h2>GIFT</h2>
+                <h2>MONSTER</h2>
+            </div>
+        </div>
+        <div id="search">
+            <!-- button for search -->
+            <button><img src="./img/search.png" alt="search"></button>
+            <!-- button for deleting the input content-->
+            <button><img src="./img/cross.png" alt="search"></button>
+            <!-- search bar as input -->
+            <input type="text">
+        </div>
+        <button>
+        <!-- wishlist logo -->
+        <img id="wishlist" src="./img/wishlist.png" alt="wishlist">
+        </button>
+        <button>
+        <!-- cart logo -->
+        <img id="cart" src="./img/cart.png" alt="cart">
+        </button>
+        <button>
+        <!-- profile picture logo -->
+        <img id="profile_picture" src="./img/profile_picture.png" alt="profile_picture">
+        </button>
+    </header>
+    <main>
+        <div id="center">
+            <div id="seller">
+                <h2>Seller Registration</h2>
+                <form id="seller-form">
+                    <fieldset>
+                    <legend>Personal Information</legend>
+                        <section>
+                            <label for="FirstName">First Name</label>
+                            <input id="FirstName" name="FirstName" type="text">
+                        </section>
+                        <section>
+                            <label for="LastName">Last Name</label>
+                            <input id="LastName" name="LastName" type="text">
+                        </section>
+                        <section>
+                            <label for="Email">Email ID</label>
+                            <input type="email" name="Email" id="Email">
+                        </section>
+                        <section>
+                            <!-- add required here for phone verification -->
+                            <label for="PhoneNumber">Ph. Number</label>
+                            <input type="tel" name="PhoneNumber" id="PhoneNumber">
+                        </section>
+                    </fieldset>
+                    <fieldset>
+                    <legend>Business Information</legend>
+                        <section>
+                            <input type="checkbox" name="BusinessForm" id="BusinessForm">
+                            <label for="BusinessForm">I have GST Number</label>
+                            <!-- <input type="checkbox" name="NoBusinessForm" id="NoBusinessForm">
+                            <label for="NoBusinessForm">I will update it later</label> -->
+                        </section>
+                        <section>
+                            <label for="GSTIN">Provisional GSTIN</label>
+                            <input type="text" name="GSTIN" id="GSTIN">
+                        </section>
+                        <section>
+                            <label for="PAN">PAN Number</label>
+                            <input id="PAN" name="PAN" type="text">
+                        </section>
+                    </fieldset>
+                    <fieldset>
+                    <legend>Tell Us More About Your Business</legend>
+                        <section>
+                            <label for="StoreName">StoreName</label>
+                            <input id="StoreName" name="StoreName" type="text">
+                        </section>
+                        <section>
+                            <label for="ProductCat">Product Category</label>
+                            <input id="ProductCat" name="ProductCat" type="text">
+                        </section>
+                        <section>
+                            <label for="Address">Address</label>
+                            <input id="Address" name="Address" type="text">
+                        </section>
+                        <section>
+                            <label for="State">State</label>
+                            <input id="State" name="State" type="text">
+                        </section>
+                        <section>
+                            <label for="City">City</label>
+                            <input id="City" name="City" type="text">
+                        </section>
+                    </fieldset>
+                    <button type="submit">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
