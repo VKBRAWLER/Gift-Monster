@@ -8,16 +8,16 @@
     src: url(./font/ADLaM_Display/ADLaMDisplay-Regular.ttf);
 }
 :root{
-    --PriTheme: #00b4d8;
-    --SecTheme: #0077b6;
-    --TriTheme: #90e0ef;
-    --BgTheme: #caf0f8;
+    --PriTheme: #FFA500;
+    --SecTheme: #ffa238;
+    --TriTheme: #f9cd86;
+    --BgTheme: white;
     --PriText: #003049;
-    --SecText: #03045e;
-    --Border: #003049;
+    --SecText: #7a5413;
+    --Border: #D3D3D3;
     --Link: #0066CC;
     --Demo: rgb(0 168 99);
-    --boxShadow: 22, 102, 228;
+    --boxShadow: 255, 111, 0;
     /* rgb(0 168 99) */
 }
 body {
