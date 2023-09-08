@@ -1,5 +1,5 @@
 /* profile page styling code */
-main #profile {
+#profile {
     height: auto;
     display: flex;
     justify-content: space-evenly;
@@ -7,18 +7,18 @@ main #profile {
     font-size: x-large;
     color: var(--PriText);
 }
-main #profile img {
+#profile img {
     height: 20vw;
     min-height: 250px;
     max-height: 400px;
 }
-main #profile .info {
+#profile .info {
     margin: auto 0;
 }
-main #profile p {
+#profile p {
     margin: 2rem 0;
 }
-main #orders {
+#orders {
     width: calc(100% - 80px);
     min-height: 200px;
     margin: 20px;
@@ -26,45 +26,62 @@ main #orders {
     border-radius: 30px;
     background-color: var(--TriTheme);
 }
-main #orders h2 {   
+#orders h2 {   
     text-decoration: underline; 
     margin-bottom: 10px;
 }
-main #orders ul {
+#orders ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
 }
-main #orders li {
+#orders li {
     width: calc(100% - 40px);
     height: 130px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 150px auto 120px;
     padding: 20px;
     margin: 20px 0;
     background-color: var(--SecTheme);
     border-radius: 30px;
+    position: relative;
 }
 @media screen and (min-width: 1200px) {
-    main #orders li {
+    #orders li {
         width: calc(50% - 80px);
         margin: 20px 20px;
     }
 }
-main #orders img {
+@media screen and (max-width: 600px) {
+    #orders li {
+        height: 100px;
+        grid-template-columns: 110px auto;
+        margin: 10px 0;
+    }
+}
+#orders img {
     height: inherit;
 }
-main #orders .info {
-    width: 60%;
-}
-main #orders h3 {   
+#orders h3 {   
     text-decoration: underline;
     margin-bottom: 10px;
     display: inline;
 }
-main #orders span {
+#orders span {
     margin-left: 10px;
 }
-main #orders button {
+@media screen and (max-width: 600px) {
+    #orders h3 {
+        font-size: small;
+    }
+    #orders span {
+        font-size: smaller;
+    }
+    #orders p {
+        font-size: smaller;
+    }
+}
+#orders button {
     height: 50px;
     width: 100px;
     border: none;
@@ -73,14 +90,34 @@ main #orders button {
     margin-bottom: 40px;
     margin-left: auto;
 }
-main #orders button:hover {
+@media screen and (max-width: 600px) {
+    #orders button {
+        position: absolute;
+        margin: 0;
+        bottom: 5px;
+        right: 15px;
+        border-radius: inherit;
+        height: 30px;
+        width: 120px;
+        font-size: medium;
+    }
+}
+@media screen and (max-width: 425px) {
+    #orders li {
+        height: 70px;
+        grid-template-columns: 80px auto;
+    }
+}
+#orders button:hover {
     font-size: large;
 }
-main #orders a {
+#orders a {
     font-size: large;
+    color: var(--Link);
     width: 100%;
     text-align: center;
+    text-decoration: none;
 }
-main #orders a:hover {
+#orders a:hover {
     text-decoration: underline;
 }

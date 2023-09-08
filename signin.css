@@ -1,5 +1,5 @@
 /* sign in page styling code */
-main #signin {
+#signin {
     background-color: var(--PriTheme);
     padding: 30px;
     width: 360px;
@@ -7,16 +7,16 @@ main #signin {
     border-radius: 30px;
 }
 @media screen and (max-width: 425px) {
-    main #signin {
+    #signin {
         height: 480px;
         padding: 10px;
     }
 }
-main #signin h2 {
+#signin h2 {
     text-align: center;
     font-size: xx-large;
 }
-main #signin form {
+#signin form {
     height: 90%;
     justify-content: center;
     align-items: center;
@@ -25,24 +25,24 @@ main #signin form {
     flex-wrap: wrap;
 }
 @media screen and (max-width: 425px) {
-    main #sign form {
+    #sign form {
         height: 90%;
     }
 }
-main #signin section {
+#signin section {
     width: 80%;
 }
-main #signin label {
+#signin label {
     color: var(--PriText);
 }
-main #signin input {
+#signin input {
     width: 100%;
     height: 40px;
     border-radius: 20px;
     padding: 5px;
     font-size: larger;
 }
-main #signin form a {
+#signin form a {
     position: absolute;
     bottom: -15px;
     right: 0;
@@ -50,19 +50,19 @@ main #signin form a {
     color: var(--SecText);
 }
 @media screen and (max-width: 425px) {
-    main #signin form a {
+    #signin form a {
         bottom: 0;
     }
 }
-main #signin form a:hover {
+#signin form a:hover {
     text-decoration: underline;
 }
-main #signin button {
+#signin button {
     height: 50px;
     width: 40%;
     border-radius: 10px;
     font-size: larger;
 }
-main #signin button:hover {
+#signin button:hover {
     background-color: var(--TriTheme);
 }

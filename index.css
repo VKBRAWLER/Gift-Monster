@@ -1,5 +1,5 @@
 /* video section styling code */
-main #video {
+#video {
     width: cacl(100% - 20px);
     /* max-width: 1024px; */
     margin: 10px;
@@ -23,7 +23,7 @@ main #video {
     object-fit: cover;
 }
 /* offer section styling code */
-main #offers {
+#offers {
     padding: 20px;
     width: calc(100% - 40px);
     text-align: center;
@@ -32,7 +32,7 @@ main #offers {
     justify-content: space-evenly;
     overflow-x: scroll;
 }
-main #offers div {
+#offers div {
     /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
     box-shadow: 5px 5px 10px 0px rgba(var(--boxShadow), 0.5);
     display: grid;
@@ -40,24 +40,24 @@ main #offers div {
     grid-template-columns: 120px 120px;
     background-color: var(--TriTheme);
 }
-main #offers div:hover {
+#offers div:hover {
     box-shadow: 5px 5px 5px 5px rgba(var(--boxShadow), 0.8);
 }
 @media screen and (max-width: 1000px) {
-    main #offers div:hover {
+    #offers div:hover {
         box-shadow: 5px 5px 10px 0px rgba(var(--boxShadow), 0.5);
     }
 }
-main #offers p {
+#offers p {
     grid-column: 1/ span 2;
 }
-main #offers img {
+#offers img {
     height: 100px;
     margin: 10px;
 }
 @media screen and (max-width: 1270px) {
     /* offer section for mobile and tablets */
-    main #offers {
+    #offers {
         gap: 20px;
         justify-content: start; 
     }
