@@ -17,14 +17,14 @@ showSlide(currentSlide);
 
 
 //Button to change image in item.html
-const productImages = document.querySelectorAll('.product-images img');
-const nextButton = document.querySelector('.next-button');
-const prevButton = document.querySelector('.prev-button');
+const productImages = document.querySelectorAll('.imgBox img');
+const nextButton = document.querySelector('.nextBtn');
+const prevButton = document.querySelector('.prevBtn');
 let currentIndex = 0;
 function showImage(index) {
     productImages.forEach((img, i) => {
-        if (i === index) { img.classList.add('active'); }
-        else { img.classList.remove('active'); }
+        if (i === index) { img.classList.add('visible'); }
+        else { img.classList.remove('visible'); }
     });}
 nextButton.addEventListener('click', () => {
     currentIndex++;

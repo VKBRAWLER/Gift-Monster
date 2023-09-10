@@ -7,7 +7,7 @@
     font-family: ADLaMDisplay;
     src: url(./font/ADLaM_Display/ADLaMDisplay-Regular.ttf);
 }
-:root{
+:root {
     --PriTheme: #FFA500;
     --SecTheme: #ffa238;
     --TriTheme: #f9cd86;
@@ -19,6 +19,13 @@
     --Demo: rgb(0 168 99);
     --boxShadow: 255, 111, 0;
     /* rgb(0 168 99) */
+    --Screen: calc(100vh - 100px);
+}
+@media screen and (max-width: 900px) {
+    :root {
+        /* This is when the search bar will come below */
+        --Screen: calc(100vh - 160px);
+    }
 }
 body {
     background-color: var(--BgTheme);
@@ -192,18 +199,11 @@ nav h4 {
   }
 /* default main content styling code */
 main {
-    --Screen: calc(100vh - 100px);
     width: 100%;
     position: relative;
     background-color: var(--BgTheme);
     /* 80 normal, below 900px 60 more */
     min-height: var(--Screen);
-}
-@media screen and (max-width: 900px) {
-    main {
-        /* This is when the search bar will come below */
-        --Screen: calc(100vh - 160px);
-    }
 }
 main #center {
     width: 100%;
