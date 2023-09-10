@@ -19,12 +19,33 @@
 #item .imgBox img.visible {
     display: block;
 }
+#item .imgBox .itemControls {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#item .imgBox button {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 5px;
+}
+#item .imgBox button img{
+    display: block;
+}
+
 #item .info {
     padding-left: 20px;
     width: 50vw;
 }
 #item .info p {
     margin-bottom: 10px;
+}
+#item .info h2 s {
+    font-size: 60%;
+    
 }
 @media screen and (max-width: 900px) {
     #item .info {

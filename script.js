@@ -17,7 +17,7 @@ showSlide(currentSlide);
 
 
 //Button to change image in item.html
-const productImages = document.querySelectorAll('.imgBox img');
+const productImages = document.querySelectorAll('.imgBox .item-slide');
 const nextButton = document.querySelector('.nextBtn');
 const prevButton = document.querySelector('.prevBtn');
 let currentIndex = 0;
