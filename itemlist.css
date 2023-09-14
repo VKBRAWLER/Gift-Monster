@@ -1,0 +1,25 @@
+#options {
+    height: 50px;
+    background-color: var(--PriTheme);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+#options summary {
+    cursor: pointer;
+}
+#options .filter {
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    background-color: var(--Border);
+    right: 20px;
+    top: 50px;
+}
+#box {
+    width: 100%;
+    height: 200px;
+    background-color: var(--TriTheme);
+}

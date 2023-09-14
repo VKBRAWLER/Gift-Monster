@@ -135,7 +135,8 @@ header button:nth-child(n + 3){
 /* Nav or Navigation Bar styling code */
 nav {
     height: 100px;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
+     /*removed to make spacing independent to each page  */
     background-color: var(--TriTheme);
     display: flex;
     justify-content: space-evenly;
