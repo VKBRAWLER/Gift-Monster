@@ -44,8 +44,7 @@
     margin-bottom: 10px;
 }
 #item .info h2 s {
-    font-size: 60%;
-    
+    font-size: 60%;  
 }
 @media screen and (max-width: 900px) {
     #item .info {
