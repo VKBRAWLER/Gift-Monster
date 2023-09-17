@@ -12,11 +12,23 @@
 }
 #options .filter {
     position: absolute;
-    width: 400px;
+    z-index: 2;
+    width: 200px;
     height: 200px;
     background-color: var(--Border);
     right: 20px;
     top: 50px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+}
+#options .filter li {
+    color: var(PriText);
+    width: 100%;
 }
 #box {
     width: calc(100% - 40px);
