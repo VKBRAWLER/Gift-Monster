@@ -18,7 +18,7 @@
 #profile p {
     margin: 2rem 0;
 }
-#orders {
+section {
     width: calc(100% - 80px);
     min-height: 200px;
     margin: 20px;
@@ -26,20 +26,19 @@
     border-radius: 30px;
     background-color: var(--TriTheme);
 }
-#orders h2 {   
+section h2 {   
     text-decoration: underline; 
     margin-bottom: 10px;
 }
-#orders ul {
+section ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
 }
-#orders li {
+section li {
     width: calc(100% - 40px);
     height: 130px;
     display: grid;
-    grid-template-columns: 150px auto 120px;
     padding: 20px;
     margin: 20px 0;
     background-color: var(--SecTheme);
@@ -47,20 +46,23 @@
     position: relative;
 }
 @media screen and (min-width: 1200px) {
-    #orders li {
+    section li {
         width: calc(50% - 80px);
         margin: 20px 20px;
     }
 }
 @media screen and (max-width: 600px) {
-    #orders li {
+    section li {
         height: 100px;
         grid-template-columns: 110px auto;
         margin: 10px 0;
     }
 }
-#orders img {
+section img {
     height: inherit;
+}
+#orders li {
+    grid-template-columns: 150px auto 120px;
 }
 #orders h3 {   
     text-decoration: underline;
@@ -103,7 +105,7 @@
     }
 }
 @media screen and (max-width: 425px) {
-    #orders li {
+    section li {
         height: 70px;
         grid-template-columns: 80px auto;
     }
@@ -120,4 +122,12 @@
 }
 #orders a:hover {
     text-decoration: underline;
+}
+#services li {
+    grid-template-columns: 150px auto;
+}
+#services .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

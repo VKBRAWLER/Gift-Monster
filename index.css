@@ -32,13 +32,15 @@
     justify-content: space-evenly;
     overflow-x: scroll;
 }
-#offers div {
+#offers a {
     /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
     box-shadow: 5px 5px 10px 0px rgba(var(--boxShadow), 0.5);
     display: grid;
     grid-template-rows: 30px 120px 120px;
     grid-template-columns: 120px 120px;
     background-color: var(--TriTheme);
+    text-decoration: none;
+    color: var(--TriThemeText);
 }
 #offers div:hover {
     box-shadow: 5px 5px 5px 5px rgba(var(--boxShadow), 0.8);

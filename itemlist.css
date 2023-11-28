@@ -46,6 +46,8 @@
     padding: 20px;
     border: 20px solid var(--SecTheme);
     border-radius: 20px;
+    text-decoration: none;
+    color: var(--PriText);
 }
 #box .card img {
     width: calc(100% - 40px);

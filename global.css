@@ -50,6 +50,8 @@ header .logo{
     margin-right: auto;
     /* border: 1px solid var(--PriTheme); */
     display: flex;
+    text-decoration: none;
+    color: var(--PriTheme);
 }
 header h2 {
     padding-left: 10px;
@@ -97,6 +99,10 @@ header #search button {
     position: absolute;
     height: 30px;
     top: 10px;
+}
+header button a {
+    /* button images to follow thier containing btn */
+    height: inherit;
 }
 header button img {
     /* button images to follow thier containing btn */
